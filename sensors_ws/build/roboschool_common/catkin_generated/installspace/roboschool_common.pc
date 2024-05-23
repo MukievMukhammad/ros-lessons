@@ -1,0 +1,8 @@
+prefix=/home/mukiev/catkin_ws/sensors_ws/install
+
+Name: roboschool_common
+Description: Description of roboschool_common
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

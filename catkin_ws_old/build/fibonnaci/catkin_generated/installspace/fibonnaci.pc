@@ -1,0 +1,8 @@
+prefix=/home/mukiev/catkin_ws/install
+
+Name: fibonnaci
+Description: Description of fibonnaci
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

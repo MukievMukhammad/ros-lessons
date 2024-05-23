@@ -1,0 +1,8 @@
+prefix=/home/mukiev/catkin_ws/urdf_ws/devel
+
+Name: test_pluginlib
+Description: Description of test_pluginlib
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

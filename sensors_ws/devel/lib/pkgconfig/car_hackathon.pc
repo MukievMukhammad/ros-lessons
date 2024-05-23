@@ -1,0 +1,8 @@
+prefix=/home/mukiev/catkin_ws/sensors_ws/devel
+
+Name: car_hackathon
+Description: Description of car_hackathon
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

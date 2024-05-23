@@ -1,0 +1,2 @@
+webots_ros
+-DCATKIN_DEVEL_PREFIX=/home/mukiev/catkin_ws/webtos/devel -DCMAKE_INSTALL_PREFIX=/home/mukiev/catkin_ws/webtos/install -G Unix Makefiles

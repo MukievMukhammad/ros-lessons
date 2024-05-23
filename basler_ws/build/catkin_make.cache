@@ -1,0 +1,2 @@
+dragandbot_common/dnb_msgs:opencv-ros-template:pylon-ros-camera/camera_control_msgs:pylon-ros-camera/pylon_camera
+-DCATKIN_DEVEL_PREFIX=/home/mukiev/basler_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mukiev/basler_ws/install -G Unix Makefiles

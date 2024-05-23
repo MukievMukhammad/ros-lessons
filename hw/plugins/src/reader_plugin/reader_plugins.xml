@@ -1,0 +1,5 @@
+<library path="lib/libreader_plugins">
+  <class type="reader_plugins::FileReader" base_class_type="reader_base::ReaderBase">
+    <description>Plugin to get files char count.</description>
+  </class>
+</library>

@@ -1,0 +1,8 @@
+prefix=/home/mukiev/catkin_ws/hw/plugins/devel
+
+Name: reader_plugin
+Description: Description of reader_plugin
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/mukiev/basler_ws/install
+
+Name: template
+Description: Description of template
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

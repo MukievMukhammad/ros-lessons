@@ -1,0 +1,2 @@
+chat_pkg:fibonnaci:my_turtle:my_urdf:mypack:simple_counter:timer_package:turtlebot3_navigation_demo:unstoppable_tb3:wander_bot
+-DCATKIN_DEVEL_PREFIX=/home/mukiev/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mukiev/catkin_ws/install -G Unix Makefiles

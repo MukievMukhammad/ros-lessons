@@ -1,0 +1,9 @@
+<launch>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find mapping)/maps/map.yaml">
+        <param name="frame_id" value="loaded_map"/>
+    </node>
+    <node name="clean_map_service" pkg="mapping" type="clean_map_service"></node>
+    <node name="load_map" pkg="mapping" type="load_map"></node>
+    <node name="map_saver" pkg="map_server" type="map_saver" args="-f $(find mapping)/maps/new_map map:=/new_map" output="screen"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find mapping)/rviz/mapping.rviz"/>
+</launch>

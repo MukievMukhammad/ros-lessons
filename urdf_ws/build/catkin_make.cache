@@ -1,0 +1,2 @@
+my_urdf:rrbot_control:rrbot_description:rrbot_gazebo:test_pluginlib
+-DCATKIN_DEVEL_PREFIX=/home/mukiev/catkin_ws/urdf_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mukiev/catkin_ws/urdf_ws/install -G Unix Makefiles

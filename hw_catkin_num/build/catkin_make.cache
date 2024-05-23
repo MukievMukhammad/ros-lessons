@@ -1,0 +1,2 @@
+hw
+-DCATKIN_DEVEL_PREFIX=/home/mukiev/hw_catkin_num/devel -DCMAKE_INSTALL_PREFIX=/home/mukiev/hw_catkin_num/install -G Unix Makefiles

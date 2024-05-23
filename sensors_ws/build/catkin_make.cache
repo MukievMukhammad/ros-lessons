@@ -1,0 +1,2 @@
+car_description:car_gazebo:car_hackathon:car_msgs:roboschool_common
+-DCATKIN_DEVEL_PREFIX=/home/mukiev/catkin_ws/sensors_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mukiev/catkin_ws/sensors_ws/install -G Unix Makefiles

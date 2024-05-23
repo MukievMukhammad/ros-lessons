@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/mukiev/catkin_ws/webtos/devel/setup.sh
