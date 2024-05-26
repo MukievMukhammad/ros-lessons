@@ -1,43 +1,47 @@
+<?xml version="1.0"?>
 <robot>
-    <!-- ros_control plugin -->
-    <gazebo>
-        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-        <robotNamespace>/rrbot</robotNamespace>
-        <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-        </plugin>
-    </gazebo>
+  <!-- ros_control plugin -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>robot</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>
+  
+  
+  <gazebo reference="left_wheel">
+    <mu1>0.01</mu1>
+    <mu2>0.01</mu2>
+    <material>
+        Gazebo/Black
+    </material>
+  </gazebo>
 
-    <gazebo reference="base_link">
-        <material>
-            Gazebo/Gray
-        </material>
-    </gazebo>
-    
-    <gazebo reference="left_wheel">
-        <material>
-            Gazebo/Black
-        </material>
-    </gazebo>
+  <gazebo reference="right_wheel">
+    <mu1>0.01</mu1>
+    <mu2>0.01</mu2>
+    <material>
+        Gazebo/Blue
+    </material>
+  </gazebo>
 
-    <gazebo reference="right_wheel">
-        <material>
-            Gazebo/Blue
-        </material>
-    </gazebo>
+  <gazebo reference="roller_wheel_horizontal">
+    <mu1>0.01</mu1>
+    <mu2>0.01</mu2>
+    <material>
+        Gazebo/White
+    </material>
+  </gazebo>
 
-    <gazebo reference="roller_wheel_horizontal">
-        <material>
-            Gazebo/White
-        </material>
-    </gazebo>
+  <gazebo reference="roller_wheel_vertical">
+    <mu1>0.01</mu1>
+    <mu2>0.01</mu2>
+    <material>
+        Gazebo/White
+    </material>
+  </gazebo>
 
-    <gazebo reference="roller_wheel_vertical">
-        <material>
-            Gazebo/White
-        </material>
-    </gazebo>
-
-    <!-- hokuyo -->
+  <!-- hokuyo -->
   <gazebo reference="hokuyo_link">
     <sensor type="ray" name="head_hokuyo_sensor">
       <pose>0 0 0 0 0 0</pose>
@@ -73,4 +77,21 @@
       </plugin>
     </sensor>
   </gazebo>
+
+  <!-- bumper -->
+  <gazebo reference="bumper_link">
+      <sensor name="bumper" type="contact">
+        <always_on>true</always_on>
+        <update_rate>30</update_rate>
+        <contact>
+          <collision>base_link_fixed_joint_lump__bumper_link_collision_1</collision>
+          
+        </contact>
+        <plugin name="gazebo_ros_bumper" filename="libgazebo_ros_bumper.so">
+          <robotNamespace>origin</robotNamespace>
+          <bumperTopicName>bumper</bumperTopicName>
+          <frameName>origin/bumper_link</frameName>
+        </plugin>
+      </sensor>
+    </gazebo>
 </robot>

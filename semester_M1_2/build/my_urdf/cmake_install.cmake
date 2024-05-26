@@ -52,3 +52,23 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_urdf" TYPE FILE FILES "/home/mukiev/catkin_ws/semester_M1_2/src/my_urdf/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_urdf" TYPE DIRECTORY FILES "/home/mukiev/catkin_ws/semester_M1_2/src/my_urdf/config")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_urdf" TYPE DIRECTORY FILES "/home/mukiev/catkin_ws/semester_M1_2/src/my_urdf/launch")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_urdf" TYPE DIRECTORY FILES "/home/mukiev/catkin_ws/semester_M1_2/src/my_urdf/worlds")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_urdf" TYPE DIRECTORY FILES "/home/mukiev/catkin_ws/semester_M1_2/src/my_urdf/meshes")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_urdf" TYPE DIRECTORY FILES "/home/mukiev/catkin_ws/semester_M1_2/src/my_urdf/urdf")
+endif()
+

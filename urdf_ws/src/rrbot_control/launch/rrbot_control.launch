@@ -5,8 +5,8 @@
 
   <!-- load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
-	output="screen" ns="/rrbot" args="joint_state_controller
-					  joint1_position_controller
-					  joint2_position_controller"/>
+    output="screen" ns="/rrbot" args="joint_state_controller
+              joint1_position_controller
+              joint2_position_controller"/>
 
 </launch>

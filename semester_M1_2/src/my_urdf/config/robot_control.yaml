@@ -1,0 +1,21 @@
+robot:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Position Controllers ---------------------------------------
+  roller_wheel_horizontal_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: roller_wheel_horizontal_to_base
+    pid: {p: 100.0, i: 0.01, d: 1.0}
+
+  roller_wheel_vertical_position_controller:
+    type: effort_controllers/JointEffortController
+    joint: roller_wheel_vertical_to_base
+  right_wheel_position_controller:
+    type: effort_controllers/JointEffortController
+    joint: joint_left_wheel_to_base
+  left_wheel_position_controller:
+    type: effort_controllers/JointEffortController
+    joint: joint_right_wheel_to_base

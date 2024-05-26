@@ -8,8 +8,7 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/mukiev/catkin_ws/urdf_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/mukiev/catkin_ws/urdf_ws/devel/lib:$LD_LIBRARY_PATH"
-export PATH='/opt/ros/noetic/bin:/home/mukiev/.rbenv/shims:/home/mukiev/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
-export PKG_CONFIG_PATH="/home/mukiev/catkin_ws/urdf_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PATH='/opt/ros/noetic/bin:/home/mukiev/.rbenv/shims:/home/mukiev/.rbenv/bin:/home/mukiev/.rbenv/shims:/home/mukiev/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mukiev/.config/composer/vendor/bin:/home/mukiev/.config/composer/vendor/bin'
 export PWD='/home/mukiev/catkin_ws/urdf_ws/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/mukiev/catkin_ws/urdf_ws/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/mukiev/catkin_ws/urdf_ws/src:$ROS_PACKAGE_PATH"

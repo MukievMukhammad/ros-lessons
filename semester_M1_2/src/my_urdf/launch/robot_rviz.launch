@@ -7,12 +7,14 @@
   <node unless="$(arg gui)" name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
   
   <node name="robot_state_publisher_control" pkg="robot_state_publisher" type="robot_state_publisher"
-	respawn="false" output="screen">
+	  respawn="false" output="screen">
     	<remap from="/joint_states" to="/robot/joint_states" />
   </node>
   
 
   <!-- Show in Rviz   -->
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_urdf)/launch/robot.rviz"/>
+
+  <include file="$(find my_urdf)/launch/robot_world.launch" />
 
 </launch>
