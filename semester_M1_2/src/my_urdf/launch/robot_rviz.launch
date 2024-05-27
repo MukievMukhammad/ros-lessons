@@ -1,10 +1,16 @@
 <launch>
-  <param name="robot_description"
-    command="$(find xacro)/xacro --inorder '$(find my_urdf)/urdf/robot.xacro'" />
+  	<arg name="xacro_filename" value="$(find my_urdf)/urdf/robot.xacro"/>
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(arg xacro_filename)'"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+    <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/> -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_urdf)/rviz/urdf.rviz" required="true" />
+
+  <!-- <param name="robot_description"
+    command="$(find xacro)/xacro - -inorder '$(find my_urdf)/urdf/robot.xacro'" /> -->
   
-  <arg name="gui" default="True" />
+  <!-- <arg name="gui" default="True" />
   <node if="$(arg gui)" name="joint_state_publisher" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
-  <node unless="$(arg gui)" name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  <node unless="$(arg gui)" name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" /> -->
   
   <node name="robot_state_publisher_control" pkg="robot_state_publisher" type="robot_state_publisher"
 	  respawn="false" output="screen">
@@ -13,7 +19,7 @@
   
 
   <!-- Show in Rviz   -->
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_urdf)/launch/robot.rviz"/>
+  <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_urdf)/launch/robot.rviz"/> -->
 
   <include file="$(find my_urdf)/launch/robot_world.launch" />
 
